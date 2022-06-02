@@ -1,8 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
-const modules: any[] = [MatCardModule];
+const modules: any[] = [
+  MatCardModule,
+  MatIconModule,
+  MatSnackBarModule,
+  MatProgressSpinnerModule,
+  MatDialogModule,
+];
 
 @NgModule({
   declarations: [],

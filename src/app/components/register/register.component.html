@@ -1,1 +1,23 @@
-<p>register works!</p>
+<section class="register">
+  <div class="header">
+    <h3>Sign up</h3>
+    <p>It's quick and easy</p>
+  </div>
+
+  <div class="body">
+    <form #form="ngForm">
+      <div class="user_name">
+          <input tpye="text" placeholder="First name" name="fname" NgModel/>
+          <input tpye="text" placeholder="Last name" name="lname" NgModel/>
+      </div>
+      <div class="email_password">
+          <input type="text" placeholder="Email" name="email"ngModel>
+          <input type="text" placeholder="Image Url" name="avatar" ngModel>
+          <input type="password" placeholder="Password" name="password" ngModel>
+      </div>
+      <p>By clicking Sign up you agree to our Terms of Service, Data Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+
+      <button type="submit" class="submit-button" [mat-dialog-close]="form.value">Sign up</button>
+    </form>
+  </div>
+</section>
