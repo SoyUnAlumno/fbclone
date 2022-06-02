@@ -4,13 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { FacebookGuard } from './guards/facebook.guard';
 import { RegisterComponent } from './components/register/register.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () =>
+    component: HomeComponent
+   /*  loadChildren: () =>
       import('./components/home/home.module').then((m) => m.HomeModule),
-      canActivate:[FacebookGuard]
+      canActivate:[FacebookGuard] */
   },
   {
     path: 'login',
